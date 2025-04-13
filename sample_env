@@ -1,0 +1,4 @@
+HF_TOKEN=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
+MODEL_NAME=meta-llama/Meta-Llama-3-8B-Instruct
+VECTOR_DB=chroma_db
+OPENAI_API_KEY=

@@ -1,0 +1,8 @@
+flask
+sentence-transformers
+chromadb
+langchain
+transformers
+huggingface_hubx`
+torch
+# langchain-community
