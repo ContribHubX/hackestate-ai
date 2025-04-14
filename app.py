@@ -2,15 +2,18 @@ import asyncio
 from flask import Flask, request, jsonify
 from real_state_chat_agent import ChatAgentFactory
 import json
+from flask_cors import CORS
 
 
 app = Flask(__name__)
+CORS(app, resources={r"/api/*": {"origins": "https://1cz2hd3b-5173.asse.devtunnels.ms"}}, supports_credentials=True)
+
 chat_agent = ChatAgentFactory()
 @app.route("/")
 def hello_world():
     return "<p>Hello, World!</p>"
 
-@app.route("/ask", methods=["POST"])
+@app.route("/api/agent/chat", methods=["POST"])
 def ask_chat_agent():
     data = request.get_json()
     query = data.get("query")

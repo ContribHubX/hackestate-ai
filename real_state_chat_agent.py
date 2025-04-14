@@ -41,7 +41,7 @@ class ChatAgent(IChatAgent):
                 "    \"title\": \"Property Title\",\n"
                 "    \"url\": \"https://property-link.com\",\n"
                 "    \"status\": \"For Sale or For Rent\",\n"
-                "    \"category\": \"Land / Condo / House & Lot / etc.\",\n"
+                "    \"category\": \"Land / Condo / House & Lot / etc.\",\n"  
                 "    \"type\": \"Type of property (e.g. Commercial Lot, Studio Unit, etc.)\",\n"
                 "    \"location\": \"Location of the property\",\n"
                 "    \"postedOn\": \"MMM. DD, YYYY\",\n"
