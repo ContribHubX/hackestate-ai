@@ -1,2 +1,4 @@
 .qodo
 .venv
+venv
+.env

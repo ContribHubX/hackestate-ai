@@ -6,8 +6,15 @@ from flask_cors import CORS
 
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "https://1cz2hd3b-5173.asse.devtunnels.ms"}}, supports_credentials=True)
-
+CORS(app, resources={
+    r"/api/*": {
+        "origins": [
+            "https://1cz2hd3b-5173.asse.devtunnels.ms",
+            "http://localhost:5173",
+            "https://your-frontend.com"
+        ]
+    }
+}, supports_credentials=True)
 chat_agent = ChatAgentFactory()
 @app.route("/")
 def hello_world():

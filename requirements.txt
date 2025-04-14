@@ -3,6 +3,7 @@ sentence-transformers
 chromadb
 langchain
 transformers
-huggingface_hubx`
+huggingface_hub
 torch
-# langchain-community
+accelerate
+langchain-community
