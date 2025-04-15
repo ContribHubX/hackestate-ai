@@ -11,7 +11,7 @@ load_dotenv()
 
 def retrieve_listings() -> List[any] :
     print("running list retrieval")
-    with open("datasets/filipinohomes_listing.json", "r", encoding='utf-8') as f:
+    with open("datasets/listings_1.json", "r", encoding='utf-8') as f:
         listings = json.load(f)
         return listings;
 

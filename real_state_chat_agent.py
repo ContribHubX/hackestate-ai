@@ -7,9 +7,10 @@ from transformers import  PreTrainedTokenizer, PreTrainedModel
 from langchain.vectorstores.base import VectorStore
 from embed import load_llm_model, load_db
 import json
+load_dotenv(override=True)
 
 openai.api_key = os.getenv("OPENAI_API_KEY")  # Make sure this is set
-load_dotenv()
+
 
 
 class IChatAgent(ABC):
@@ -52,6 +53,7 @@ class ChatAgent(IChatAgent):
                 "  }\n"
                 "]\n\n"
                 "If no relevant properties are found, return an empty array: []"
+                "remove the json tags ```json"
             )
 
 
